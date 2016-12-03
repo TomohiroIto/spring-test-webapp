@@ -1,0 +1,22 @@
+<div>
+	<h4>users.html</h4>
+	<form>
+		<input type="text" name="userId" ng-model="userId"  />
+		<input type="text" name="userName" ng-model="userName"  />
+		<p>
+			<button class="btn btn-primary" ng-click="registerPost()">登録</button>
+		</p>
+
+		<p>------------------------------------------------------------------</p>
+
+		<p>
+			<button class="btn btn-primary" ng-click="fetch()">最新取得</button>
+		</p>
+
+		<ul>
+			<li ng-repeat="member in members">{{member.userId}}
+				{{member.userName}}</li>
+		</ul>
+	</form>
+
+</div>
